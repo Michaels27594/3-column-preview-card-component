@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
+  object-fit: cover;
+}
+
+.gripwrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Sedans */
+.Sedans {
+  margin-bottom: 20px;
+  background-color: black;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.Sedans img {
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+.Sedans h1 {
+  color: white;
+  font-size: 2.26 rem;
+  padding: 0rem 2rem 1rem 6rem;
+}
+
+.Sedans p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  font-size: 0.83rem;
+  line-height: 1.43rem;
+  padding: 0rem 1rem 6.2rem 02rem;
+}
+
+/*SUVS*/
+.SUVs {
+  margin-bottom: 20px;
+  background-color: black;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.SUVs img {
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+.SUVs h1 {
+  color: white;
+  font-size: 2.26 rem;
+  padding: 0rem 2rem 1rem 7rem;
+}
+
+.SUVs p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  font-size: 0.83rem;
+  line-height: 1.43rem;
+  padding: 0rem 1rem 5rem 02rem;
+}
+
+/* Luxury*/
+.Luxury {
+  margin-bottom: 20px;
+  background-color: black;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.Luxury img {
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+.Luxury h1 {
+  color: white;
+  font-size: 2rem;
+  padding: 0rem 2rem 1rem 6rem;
+}
+
+.Luxury p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  font-size: 0.83rem;
+  line-height: 1.43rem;
+  padding: 0rem 1rem 6.2rem 02rem;
+}
+
+button {
+  font-family: "lexend Deca", sans-serif;
+  position: relative;
+  left: 3.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  border-radius: 43rem;
+  margin-bottom: 3rem
+}
+
+.Cbutton1 {
+  color: #FF9F45
+}
+
+.Cbutton2 {
+  color: #008E89
+}
+
+.Cbutton3 {
+  margin-left: 10px;
+  color: #086E7D
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: Transparent;
+  color: gray;
+  border: 2px solid;
+}
+
+/*Mobile Screen 375px Responsive Styling*/
+@media only screen and (max-width: 375px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4rem 1.5rem 4rem 1.5rem;
+  }
+
+  .Cbutton1 p {
+    padding-bottom: 1rem;
+  }
+
+  .Cbutton2 p {
+    padding-bottom: 1rem;
+  }
+
+  .Cbutton3 p {
+    padding-bottom: 1rem;
+  }
